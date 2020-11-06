@@ -1,0 +1,448 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.black{
+  background-color: black;
+}
+/* Achtergrond van Home */
+.background-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 98vh;
+  background-color: black;
+  overflow: hidden;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+}
+/* Achtergrond voor "Over" Pagina */
+.white{
+  background-color: white;
+}
+/* Vanaf hier is de nav css */
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.navul > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+.navul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.navul2 > li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+.navbar-container ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar-container ul li {
+    display: inline-block;
+    font-size: 16px;
+}
+.navbar-container ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;	
+    padding: 10px;
+    transition: color 0.5s;
+}
+.navbar-container ul li .underline {
+    height: 3px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+}
+.navbar-container ul li.active-link .underline {
+    width: 100%;
+    background-color: white;
+}
+.navbar-container ul li:hover .underline {
+    background-color: white;
+    width: 100%;
+}
+.navbar-container ul li:active a {
+    transition: none;
+    color: rgba(255,255,255,0.76);
+}
+.navbar-container ul li:active .underline {
+    transition: none;
+    background-color: rgba(255,255,255,0.76);
+}
+.navbar-container2 ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar-container2 ul li {
+    display: inline-block;
+    font-size: 16px;
+}
+.navbar-container2 ul li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;	
+    padding: 10px;
+    transition: color 0.5s;
+}
+.navbar-container2 ul li .underline {
+    height: 3px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+}
+.navbar-container2 ul li.active-link .underline {
+    width: 100%;
+    background-color: black;
+}
+.navbar-container2 ul li:hover .underline {
+    background-color: black;
+    width: 100%;
+}
+.navbar-container2 ul li:active a {
+    transition: none;
+    color: rgba(255,255,255,0.76);
+}
+.navbar-container2 ul li:active .underline {
+    transition: none;
+    background-color: rgba(255,255,255,0.76);
+}
+/* Hier eindigd de Nav css
+Bron: Codepen.io
+*/
+.portfolio {
+  margin-left:3%;
+  margin-top:1.5%;
+  color:white;
+}
+.portfolio2 {
+  margin-left:3%;
+  margin-top:1.5%;
+  color:black;
+}
+.nostyle{
+  text-decoration: none;
+}
+.eerst{
+  display: flex;
+  text-align: center;
+  color:white;
+  font-size: 50px;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-bottom: 2%;
+  border-bottom: 2px solid white;
+}
+/* css voor main flex container begin */
+.socialmediaflex{
+  display: flex;
+  flex-direction: column;
+}
+.iconflex{
+  display: flex;
+  flex-direction: column;
+}
+.flex-container-contact {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 8%;
+}
+.flex-container-contact > div {
+  color: white;
+  width: 48%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container-contact > div > a{
+  text-decoration: none;
+  color:white;
+}
+.websiteshead{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-container > article {
+  color: white;
+  width: 48%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container > article > a > img{
+  width: 90%;
+  height: 90%;
+  display: block;
+  margin: -10px auto;
+}
+.flex-container > article > a{
+  text-decoration: none;
+  color:white;
+}
+/* css voor main flex container einde */
+/* css titel begin */
+.titel {
+  position: relative;
+  margin: auto;
+  height: 1.2em;
+  color: transparent;
+  font-family: 'Cambay', sans-serif;
+  font-size: 5vw;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.03em;
+}
+.titel > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffff64;
+  pointer-events: none;
+}
+.titel > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  animation: deconstructed1 5s infinite;
+}
+.titel > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  animation: deconstructed2 5s infinite;
+}
+.titel > div:nth-child(3) {
+    -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  animation: deconstructed3 5s infinite;
+}
+.titel > div:nth-child(4) {
+    -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 5s infinite;
+}
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(140%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+  83% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(-140%);
+  }
+}
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(140%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+  82% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(-145%);
+  }
+}
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(140%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(140%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-155%);
+  }
+}
+/* css titel einde */
+/* aparte flex container begin */
+.flex-container2{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 2%;
+}
+.flex-container2 > .eerstestuk{
+  color: black;
+  width: 25%;
+  height: 100%;
+  text-align: left;
+  line-height: 35px;
+  font-size: 30px;
+}
+.flex-container2 > .tweedestuk{
+  color: black;
+  width: 25%;
+  height: 800px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  background-color: white;
+  border-right: grey 1px;
+  border-right-style: solid;
+  padding-right: 30px;
+}
+.flex-container2 > .tweedestuk > p{
+  font-size: 20px;
+}
+.flex-container2 > .tweedestuk > .hobby-text{
+  font-size: 15px;
+  line-height: 20px;
+}
+.flex-container2 > .derdestuk{
+  color: black;
+  width: 25%;
+  height: 800px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 30px;
+  background-color: white;
+  margin-left: 30px;
+}
+.flex-container2 > .derdestuk > p{
+  font-size: 20px;
+}
+.flex-container2 > .vierdestuk{
+  color: black;
+  width: 25%;
+  height: 100%;
+  text-align: left;
+  line-height: 35px;
+  font-size: 30px;
+}
+/* aparte flex container einde */
+.profiel{
+  width: 200px;
+  height: 210px;
+  border-radius: 100%;
+}
+.formulier {
+  flex-direction: column;
+  justify-content: center;
+}
+.input{
+  width: 60%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  margin: 15px auto 0 auto;
+}
+.knop {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  margin: 15px auto 0 auto;
+  width: 63%;
+  background-color: #f5543b;
+  color: white;
+}
+/* Footer css begin */
+.footer {
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.indexfooter {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+.overfooter {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+}
+/* Footer css einde */
+.paars{
+  color: inherit;
+  text-decoration: none;
+}
